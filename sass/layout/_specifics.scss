@@ -1,0 +1,33 @@
+.specifics-list {
+    display: flex;
+}
+
+.specifics-list__item {
+    width: 270px;
+}
+
+.specifics-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.specifics-list__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--title-text-color);
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.specifics-list__text {
+    line-height: 1.71;
+}
+
+.specifics-list__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+}

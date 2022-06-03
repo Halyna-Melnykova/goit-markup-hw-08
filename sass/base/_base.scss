@@ -1,0 +1,25 @@
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    font-size: $main-font-size;
+    font-family: $main-font-family;
+    letter-spacing: 0.03em;
+}
+.section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        }
+}
