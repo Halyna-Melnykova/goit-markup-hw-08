@@ -1,22 +1,33 @@
 .footer-form {
+  text-align: center;
+  @include media(tablet) {
+    width: 450px;
+  }
+  @include media(desktop) {
+    width: 570px;
     margin-left: 93px;
+    text-align: left;
+  }
 }
 
 .footer-form__input {
+  width: 100%;
+  color: #ffffff;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px 16px;
+  outline: transparent;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  @include media(desktop) {
     width: 358px;
-    color: #ffffff;
-    background-color: inherit;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    margin-top: 20px;
     margin-right: 12px;
-    padding: 15px 16px;
-    outline: transparent;
-    &::placeholder {
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);
-    }
+  }
 }
-

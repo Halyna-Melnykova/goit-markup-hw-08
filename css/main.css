@@ -120,9 +120,16 @@ p {
 
 .footer__logo {
   display: block;
+  text-align: center;
   margin-bottom: 20px;
   color: var(--primary-white-color);
   line-height: 1.19;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    text-align: left;
+  }
 }
 
 .site-nav {
@@ -241,6 +248,17 @@ p {
   margin-left: 10px;
 }
 
+.address {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    text-align: left;
+  }
+}
+
 .address__location {
   font-style: normal;
   color: #ffffff;
@@ -248,7 +266,13 @@ p {
 }
 
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .address__link {
@@ -263,7 +287,22 @@ p {
 
 .social-media {
   width: 206px;
-  margin-left: 70px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .social-media {
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-media {
+    margin-left: 70px;
+    text-align: left;
+  }
 }
 
 .social__title {
@@ -303,17 +342,31 @@ p {
 }
 
 .footer-form {
-  margin-left: 93px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    width: 570px;
+    margin-left: 93px;
+    text-align: left;
+  }
 }
 
 .footer-form__input {
-  width: 358px;
+  width: 100%;
   color: #ffffff;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   margin-top: 20px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   padding: 15px 16px;
   outline: transparent;
 }
@@ -323,6 +376,13 @@ p {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .filters {
@@ -914,9 +974,25 @@ p {
   background-color: #2f303a;
 }
 
-.footer__container {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .footer-left-site {
+    margin-left: 76px;
+  }
 }
 
 .product {

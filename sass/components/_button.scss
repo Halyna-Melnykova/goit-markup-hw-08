@@ -1,39 +1,39 @@
 .button {
-    padding: 0;
-    min-width: 200px;
-    min-height: 50px;
+  padding: 0;
+  min-width: 200px;
+  min-height: 50px;
 
-    color: #ffffff;
-    background-color: var(--accent-color);
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
 
-    letter-spacing: 0.06em;
-    font-family: inherit;
+  letter-spacing: 0.06em;
+  font-family: inherit;
 
-    outline: transparent;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-            background-color: #188ce8;
-        }
+  outline: transparent;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
 .hero__btn {
-    padding: 10px 32px;
+  padding: 10px 32px;
 }
 
 .footer__btn {
-    padding: 10px auto;
+  padding: 10px auto;
 }
 .button__icon {
-    fill: #ffffff;
-    vertical-align: middle;
-    margin-left: 10px;
+  fill: #ffffff;
+  vertical-align: middle;
+  margin-left: 10px;
 }

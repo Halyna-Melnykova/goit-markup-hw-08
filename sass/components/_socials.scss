@@ -1,43 +1,51 @@
 .social-media {
-    width: 206px;
+  width: 206px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  @include media(tablet) {
+    margin-left: 165px;
+  }
+  @include media(desktop) {
     margin-left: 70px;
+    text-align: left;
+  }
 }
 
 .social__title {
-    font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: #ffffff;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .socials {
-    display: flex;
-    margin-top: 20px;
+  display: flex;
+  margin-top: 20px;
 }
 
 .socials__link {
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.1);
-    height: 44px;
-    width: 44px;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-            background-color: var(--accent-color);
-        }
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .socials__item:not(:last-child) {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .socials__icon {
-    fill: #ffffff;
+  fill: #ffffff;
 }
-

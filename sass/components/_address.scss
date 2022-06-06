@@ -1,18 +1,29 @@
+.address {
+  text-align: center;
+  margin-bottom: 60px;
+  @include media(desktop) {
+    text-align: left;
+  }
+}
 .address__location {
-    font-style: normal;
-    color: #ffffff;
-    line-height: 1.71;
+  font-style: normal;
+  color: #ffffff;
+  line-height: 1.71;
 }
 
 .address__item:not(:last-child) {
+  margin-bottom: 8px;
+  @include media(desktop) {
     margin-bottom: 9px;
+  }
 }
 
 .address__link {
-    color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
-    line-height: 1.71;
-    &:hover, &:focus {
-        color: var(--accent-color);
-    }
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  line-height: 1.71;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
