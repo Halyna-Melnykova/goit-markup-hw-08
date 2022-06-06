@@ -7,6 +7,9 @@
 }
 
 .specifics-list__item {
+  @include media(mobile-only) {
+    margin-bottom: 30px;
+  }
   @include media(tablet) {
     flex-basis: calc((100% - 60px) / 2);
     margin: 15px;
