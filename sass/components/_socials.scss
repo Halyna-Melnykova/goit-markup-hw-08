@@ -17,11 +17,14 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
+
+  display: block;
+  margin-bottom: 20px;
 }
 
 .socials {
   display: flex;
-  margin-top: 20px;
+  // margin-top: 20px;
 }
 
 .socials__link {
