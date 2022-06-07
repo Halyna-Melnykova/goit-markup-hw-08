@@ -12,6 +12,10 @@
 }
 
 .header__logo {
+  @include media(tablet) {
+    margin-right: 88px;
+  }
+
   @include media(desktop) {
     margin-right: 93px;
   }

@@ -4,10 +4,16 @@
   @include media(mobile-only) {
     display: none;
   }
+  @include media(tablet-only) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .contact__item + .contact__item {
-  margin-left: 50px;
+  @include media(desktop) {
+    margin-left: 50px;
+  }
 }
 
 .contact__link {
