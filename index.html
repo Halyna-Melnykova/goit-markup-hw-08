@@ -22,20 +22,7 @@
         <a class="link logo header__logo" href="./index.html"
           ><span class="logo--accent">Web</span>Studio</a
         >
-        <button
-          type="button"
-          class="menu-button is-open"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-        >
-          <svg width="40" height="40" aria-label="Переключатель мобільного меню">
-            <use class="icon-close" href="./images/icons.svg#icon-m-close"></use>
-            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
-          </svg>
-        </button>
-        <div class="menu-container" id="menu-container" data-menu>content</div>
-        <!-- <nav>
+        <nav>
           <ul class="list site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="link site-nav__link site-nav__link--current">Студія</a>
@@ -63,7 +50,41 @@
               +38 096 111 11 11</a
             >
           </li>
-        </ul> -->
+        </ul>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="menu-button__icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобільного меню"
+          >
+            <use class="icon-close" href="./images/icons.svg#icon-m-close"></use>
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <ul class="list menu-nav">
+            <li><a class="link site-nav__link" href="">Студія</a></li>
+            <li><a class="link site-nav__link" href="">Портфоліо</a></li>
+            <li><a class="link site-nav__link" href="">Контакти</a></li>
+          </ul>
+          <ul class="list menu-contacts">
+            <li><a href=""></a>+38 096 111 11 11</li>
+            <li><a href=""></a>info@devstudio.com</li>
+          </ul>
+          <ul class="list menu-socials">
+            <li><a href=""></a>Instagram</li>
+            <li><a href=""></a>Twitter</li>
+            <li><a href=""></a>Facebook</li>
+            <li><a href=""></a>LinkedIn</li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>

@@ -1,4 +1,6 @@
 .logo {
+  padding-top: 15px;
+  padding-bottom: 15px;
   color: #000000;
   font-family: $logo-font-ramily;
   font-weight: 700;
@@ -10,7 +12,9 @@
 }
 
 .header__logo {
-  margin-right: 93px;
+  @include media(desktop) {
+    margin-right: 93px;
+  }
 }
 
 .footer__logo {
