@@ -937,10 +937,6 @@ img {
   margin-right: 30px;
 }
 
-.work-list__image {
-  display: block;
-}
-
 .work-list__text {
   position: absolute;
   left: 0;
