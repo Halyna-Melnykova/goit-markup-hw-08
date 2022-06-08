@@ -74,6 +74,10 @@
   transform: translateY(100%);
 
   padding: 77px 24px;
+  @include media(small) {
+    padding: 15px;
+    font-size: 16px;
+  }
   @include media(tablet) {
     padding: 49px 24px 77px;
   }

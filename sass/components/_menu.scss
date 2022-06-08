@@ -90,7 +90,6 @@
 }
 .menu-socials {
   display: flex;
-  // align-items: flex-start;
   @include media(small) {
     flex-wrap: wrap;
     margin: -5px;
@@ -103,6 +102,9 @@
   letter-spacing: 0.02em;
   color: var(--accent-color);
 
+  @include media(small) {
+    font-size: 10px;
+  }
   .menu-socials__item:not(:last-child) & {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
     padding-right: 10px;
