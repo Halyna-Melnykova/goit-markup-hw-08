@@ -1,8 +1,11 @@
 .social-media {
-  width: 206px;
+  // width: 206px;
   text-align: center;
-  margin: 0 auto;
-  margin-bottom: 60px;
+  // margin: 0 auto;
+  @include media(not-desktop) {
+    margin-bottom: 60px;
+  }
+
   @include media(tablet) {
     margin-left: 165px;
   }
@@ -24,6 +27,7 @@
 
 .socials {
   display: flex;
+  justify-content: center;
 }
 
 .socials__link {

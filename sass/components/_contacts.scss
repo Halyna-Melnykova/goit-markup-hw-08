@@ -9,7 +9,11 @@
     align-items: flex-start;
   }
 }
-
+.contact__item:not(:last-child) {
+  @include media(tablet-only) {
+    margin-bottom: 10px;
+  }
+}
 .contact__item + .contact__item {
   @include media(desktop) {
     margin-left: 50px;

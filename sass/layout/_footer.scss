@@ -9,14 +9,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-  }
-  @include media(desktop) {
     align-items: baseline;
   }
 }
 .footer-left-site {
-  @include media(tablet-only) {
-    margin-left: 76px;
+  @include media(not-desktop) {
+    margin-bottom: 60px;
   }
 }
