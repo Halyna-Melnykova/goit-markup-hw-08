@@ -1,6 +1,9 @@
 .logo {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  @include media(mobile-only) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
   color: #000000;
   font-family: $logo-font-ramily;
   font-weight: 700;

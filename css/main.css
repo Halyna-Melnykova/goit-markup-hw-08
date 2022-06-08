@@ -109,13 +109,18 @@ img {
 }
 
 .logo {
-  padding-top: 15px;
-  padding-bottom: 15px;
   color: #000000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+}
+
+@media screen and (max-width: 767.98px) {
+  .logo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 
 .logo--accent {
@@ -291,6 +296,7 @@ img {
 
 .menu-container {
   display: none;
+  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
@@ -303,6 +309,10 @@ img {
 .menu-container.is-open {
   display: flex;
   flex-direction: column;
+}
+
+.menu-nav__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .menu-nav__link {
@@ -319,6 +329,11 @@ img {
 
 .menu-contacts {
   margin-top: auto;
+  margin-bottom: 64px;
+}
+
+.menu-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .menu-contacts__tel {
@@ -345,8 +360,13 @@ img {
 
 .menu-socials {
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+@media screen and (max-width: 479.98px) {
+  .menu-socials {
+    flex-wrap: wrap;
+    margin: -5px;
+  }
 }
 
 .menu-social__link {
@@ -362,8 +382,8 @@ img {
   padding-right: 10px;
 }
 
-.menu-socials__item:not(:last-child) {
-  margin-right: 10px;
+.menu-socials__item {
+  margin: 5px;
 }
 
 .button {
@@ -791,6 +811,13 @@ img {
   text-align: center;
 }
 
+@media screen and (max-width: 1199.98px) {
+  .modal-form__agreement-text {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+
 .modal-form__agreement-link {
   color: var(--accent-color);
   text-decoration-line: underline;
@@ -1025,10 +1052,6 @@ img {
   }
 }
 
-.team__image {
-  object-position: center;
-}
-
 .team__name {
   margin-top: 0;
   margin-bottom: 10px;
@@ -1188,15 +1211,12 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .product__item {
-    max-width: 450px;
-    width: 100%;
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .product__item {
-    width: 354px;
     margin: 15px;
     flex-basis: calc((100% - 60px) / 2);
   }
@@ -1204,14 +1224,12 @@ img {
 
 @media screen and (min-width: 1200px) {
   .product__item {
-    width: 370px;
     flex-basis: calc((100% - 90px) / 3);
   }
 }
 
 .product__link {
   display: block;
-  width: 370px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1236,10 +1254,6 @@ img {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 30px;
-}
-
-.product__image {
-  display: block;
 }
 
 .product__meta {
